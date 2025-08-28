@@ -1,105 +1,138 @@
-body {
+/* General Reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
-  background-color: #111;
   color: #f1f1f1;
+  background: #121212;
   scroll-behavior: smooth;
 }
 
 /* Navbar */
-nav {
-  background: #000;
-  padding: 15px;
+.navbar {
   position: fixed;
-  width: 100%;
   top: 0;
+  left: 0;
+  width: 100%;
+  background: #1e1e1e;
+  padding: 15px;
   z-index: 1000;
 }
-nav ul {
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
 }
-nav ul li {
-  display: inline;
-  margin: 0 20px;
-}
-nav ul li a {
+.navbar ul li a {
   text-decoration: none;
-  color: #00bfff;
+  color: #f1f1f1;
   font-weight: bold;
 }
-nav ul li a:hover {
-  color: #ffcc00;
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: #00c6ff;
 }
 
 /* Sections */
-section {
-  min-height: 100vh;
-  padding: 100px 20px 50px;
+.full-page {
+  height: 100vh;
+  padding: 80px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 .full-page h1 {
-  font-size: 2.5rem;
-  color: #00bfff;
+  color: #00c6ff;
   margin-bottom: 20px;
 }
+.full-page ul {
+  list-style: none;
+}
+.full-page ul li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
 
-/* Images */
-.profile-img {
-  width: 180px;
+/* Home Section */
+.profile-pic {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  margin: 20px 0;
+  margin-bottom: 15px;
 }
-.logo-img {
-  width: 120px;
+.logo {
+  width: 80px;
   margin: 15px auto;
-  display: block;
 }
-
-/* Highlights */
 .highlights {
-  font-size: 1rem;
-  margin-top: 20px;
-  line-height: 1.5;
+  font-style: italic;
+  margin: 20px 0;
   color: #ccc;
 }
+.bio {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+  color: #ddd;
+}
 
-/* Experience Jobs */
+/* Contact */
+#contact a {
+  color: #00c6ff;
+  text-decoration: none;
+}
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Experience Section */
 .job {
-  background: #222;
   margin: 20px auto;
-  padding: 20px;
-  border-radius: 10px;
   max-width: 700px;
   text-align: left;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
 }
 .job h2 {
-  color: #00bfff;
+  color: #00c6ff;
+  font-size: 1.3rem;
 }
 .job .role {
-  font-size: 0.9rem;
-  color: #aaa;
+  font-weight: normal;
+  color: #ccc;
 }
 .job .duration {
-  font-size: 0.85rem;
-  color: #bbb;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 10px;
 }
 .toggle-btn {
-  margin: 10px 0;
-  background: transparent;
-  border: 1px solid #00bfff;
+  background: none;
+  border: 1px solid #00c6ff;
+  color: #00c6ff;
   padding: 5px 10px;
-  color: #00bfff;
-  cursor: pointer;
   border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 .toggle-btn:hover {
-  background: #00bfff;
-  color: #111;
+  background: #00c6ff;
+  color: white;
 }
 .details {
   display: none;
   margin-top: 10px;
+  color: #ddd;
+  animation: fadeIn 0.3s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
