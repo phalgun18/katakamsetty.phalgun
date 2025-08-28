@@ -95,28 +95,25 @@ body {
 /* Experience Section */
 .job {
   display: flex;                     
-  align-items: stretch;   /* 🔹 Stretch both logo & content equally */
+  align-items: flex-start;
   gap: 20px;
   margin: 20px auto;
-  max-width: 900px;
+  width: 900px;          /* 🔹 Fixed width instead of only max-width */
   background: #1e1e1e;
   padding: 20px;
   border-radius: 10px;
   text-align: left;
-  min-height: 220px;   /* ✅ Same height for all */
+  min-height: 220px;     /* 🔹 Same height */
 }
 
-/* Logo takes fixed width */
 .company-logo {
-  flex: 0 0 120px;   /* ✅ Fixed width column */
-  height: 120px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   border-radius: 10px;
+  flex-shrink: 0;
   background: white;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 5px;
 }
 
 /* Content always fills rest */
