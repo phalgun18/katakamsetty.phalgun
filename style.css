@@ -1,121 +1,91 @@
-/* General */
-body {
+/* General Reset */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  background: #181818;
-  color: #f1f1f1;
-}
-
-/* Sidebar */
-.sidebar {
-  width: 260px;
-  background: #111;
-  padding: 20px;
-  height: 100vh;
-  position: fixed;
-  left: 0;
-  top: 0;
-}
-.sidebar .profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  display: block;
-  margin: auto;
-}
-.sidebar h2 {
-  text-align: center;
-  margin: 10px 0;
-}
-.sidebar .contact-info {
-  list-style: none;
   padding: 0;
-  font-size: 0.9rem;
-}
-.sidebar .social a {
-  display: inline-block;
-  margin: 5px;
-  color: #00c6ff;
-  text-decoration: none;
+  box-sizing: border-box;
 }
 
-/* Main Content */
-.content {
-  margin-left: 260px;
-  padding: 20px;
-  flex: 1;
-}
-.top-nav {
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-  background: #222;
-  padding: 10px;
-}
-.top-nav a {
+body {
+  font-family: Arial, sans-serif;
   color: #f1f1f1;
-  text-decoration: none;
+  background: #121212;
+  scroll-behavior: smooth;
 }
-.top-nav a:hover {
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #1e1e1e;
+  padding: 15px;
+  z-index: 1000;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-weight: bold;
+}
+.navbar ul li a:hover {
   color: #00c6ff;
 }
 
 /* Sections */
-section {
-  padding: 40px 20px;
-  margin-bottom: 40px;
-  background: #222;
-  border-radius: 10px;
+.full-page {
+  height: 100vh;
+  padding: 80px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
-section h1 {
+.full-page h1 {
   color: #00c6ff;
+  margin-bottom: 20px;
 }
-section ul {
+.full-page ul {
   list-style: none;
-  padding-left: 0;
 }
-section ul li {
+.full-page ul li {
   margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+/* Home Section */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.logo {
+  width: 80px;
+  margin: 15px auto;
 }
 .highlights {
   font-style: italic;
-  margin-top: 15px;
+  margin: 20px 0;
   color: #ccc;
 }
-
-/* Portfolio Grid */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-}
-.card {
-  background: #333;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
+.bio {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+  color: #ddd;
 }
 
-/* Contact form */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+/* Contact */
+#contact a {
+  color: #00c6ff;
+  text-decoration: none;
 }
-input, textarea {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-}
-button {
-  padding: 10px;
-  background: #00c6ff;
-  border: none;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
-}
-button:hover {
-  background: #007bff;
+#contact a:hover {
+  text-decoration: underline;
 }
