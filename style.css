@@ -1,3 +1,97 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #f1f1f1;
+  background: #121212;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #1e1e1e;
+  padding: 15px;
+  z-index: 1000;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-weight: bold;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: #00c6ff;
+}
+
+/* Sections */
+.full-page {
+  height: 100vh;
+  padding: 80px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.full-page h1 {
+  color: #00c6ff;
+  margin-bottom: 20px;
+}
+.full-page ul {
+  list-style: none;
+}
+.full-page ul li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+/* Home Section */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.logo {
+  width: 80px;
+  margin: 15px auto;
+}
+.highlights {
+  font-style: italic;
+  margin: 20px 0;
+  color: #ccc;
+}
+.bio {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Contact */
+#contact a {
+  color: #00c6ff;
+  text-decoration: none;
+}
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Experience Section */
 .job {
   margin: 20px auto;
   max-width: 700px;
