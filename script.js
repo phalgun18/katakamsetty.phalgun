@@ -1,6 +1,6 @@
 // Highlight active nav link on scroll
 const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav a");
+const navLinks = document.querySelectorAll(".top-nav a");
 
 window.addEventListener("scroll", () => {
   let current = "";
@@ -18,6 +18,3 @@ window.addEventListener("scroll", () => {
     }
   });
 });
-
-// Dynamic year in footer
-document.getElementById("year").textContent = new Date().getFullYear();
