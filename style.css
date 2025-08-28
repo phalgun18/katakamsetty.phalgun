@@ -1,72 +1,30 @@
-/* Reset some defaults */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* General */
-body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* Header */
-header {
-  background: linear-gradient(135deg, #007bff, #00c6ff);
-  color: white;
-  text-align: center;
-  padding: 50px 20px;
-}
-header h1 {
-  font-size: 2.5rem;
-}
-header p a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-/* Sections */
-section {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-h2 {
-  margin-bottom: 15px;
-  color: #007bff;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 5px;
-}
-
-/* Lists */
-ul {
-  list-style: none;
-}
-li {
-  margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-  text-align: center;
+/* Navigation Bar */
+nav {
+  position: sticky;
+  top: 0;
   background: #222;
-  color: #ccc;
-  padding: 20px;
-  margin-top: 40px;
+  padding: 10px 0;
+  z-index: 1000;
 }
-footer .btn {
-  background: #007bff;
-  color: #fff;
-  padding: 10px 15px;
-  border-radius: 5px;
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
 }
-footer .btn:hover {
-  background: #0056b3;
+
+nav ul li a:hover {
+  color: #00c6ff;
 }
