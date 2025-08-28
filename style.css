@@ -1,91 +1,44 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  color: #f1f1f1;
-  background: #121212;
-  scroll-behavior: smooth;
-}
-
-/* Navbar */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+.job {
+  margin: 20px auto;
+  max-width: 700px;
+  text-align: left;
   background: #1e1e1e;
-  padding: 15px;
-  z-index: 1000;
+  padding: 20px;
+  border-radius: 10px;
 }
-.navbar ul {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  list-style: none;
-}
-.navbar ul li a {
-  text-decoration: none;
-  color: #f1f1f1;
-  font-weight: bold;
-}
-.navbar ul li a:hover {
+.job h2 {
   color: #00c6ff;
+  font-size: 1.3rem;
 }
-
-/* Sections */
-.full-page {
-  height: 100vh;
-  padding: 80px 20px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-.full-page h1 {
-  color: #00c6ff;
-  margin-bottom: 20px;
-}
-.full-page ul {
-  list-style: none;
-}
-.full-page ul li {
-  margin: 10px 0;
-  font-size: 1.2rem;
-}
-
-/* Home Section */
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-.logo {
-  width: 80px;
-  margin: 15px auto;
-}
-.highlights {
-  font-style: italic;
-  margin: 20px 0;
+.job .role {
+  font-weight: normal;
   color: #ccc;
 }
-.bio {
-  max-width: 800px;
-  margin: auto;
-  line-height: 1.6;
-  color: #ddd;
+.job .duration {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 10px;
 }
-
-/* Contact */
-#contact a {
+.toggle-btn {
+  background: none;
+  border: 1px solid #00c6ff;
   color: #00c6ff;
-  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
-#contact a:hover {
-  text-decoration: underline;
+.toggle-btn:hover {
+  background: #00c6ff;
+  color: white;
+}
+.details {
+  display: none;
+  margin-top: 10px;
+  color: #ddd;
+  animation: fadeIn 0.3s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
