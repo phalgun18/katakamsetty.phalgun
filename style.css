@@ -67,16 +67,32 @@ a:hover {
   align-items: center;
 }
 
-/* Home */
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
-  border: 3px solid #00bfff;
+/* Home Layout */
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* center horizontally */
+  justify-content: center;
+  text-align: center;    /* center text */
 }
 
+/* Profile Picture */
+.profile-pic {
+  width: 200px;   /* 👉 change this to adjust picture size */
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid #00bfff;
+}
+
+/* Name Styling */
+#home h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Bio Styling */
 .bio {
   margin-top: 20px;
   max-width: 800px;
