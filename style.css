@@ -1,30 +1,52 @@
-/* Navigation Bar */
-nav {
-  position: sticky;
-  top: 0;
-  background: #222;
-  padding: 10px 0;
-  z-index: 1000;
-}
+/* General */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Arial, sans-serif; scroll-behavior: smooth; }
 
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111;
+  z-index: 1000;
+  padding: 10px 0;
+}
 nav ul {
-  list-style: none;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  list-style: none;
 }
-
-nav ul li {
-  margin: 0 15px;
-}
-
+nav ul li { margin: 0 15px; }
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
 }
+nav ul li a:hover, nav ul li a.active { color: #00c6ff; }
 
-nav ul li a:hover {
-  color: #00c6ff;
+/* Sections */
+.full-page {
+  height: 100vh;
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+#home { background: linear-gradient(135deg, #007bff, #00c6ff); color: white; text-align: center; }
+#home .profile-pic {
+  width: 150px; height: 150px; border-radius: 50%;
+  border: 3px solid white; margin-bottom: 15px;
+}
+#home .logo { width: 80px; margin-top: 10px; }
+#home .highlights { font-style: italic; margin: 15px 0; }
+#home .bio { max-width: 800px; margin: auto; text-align: justify; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; }
+
+/* Footer */
+footer {
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 10px;
 }
