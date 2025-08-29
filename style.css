@@ -67,6 +67,23 @@ a:hover {
   align-items: center;
 }
 
+.resume-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #00bfff;
+  color: #121212;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.resume-btn:hover {
+  background: #009acd;
+  color: #fff;
+}
+
+
 /* Home Layout */
 .intro {
   display: flex;
