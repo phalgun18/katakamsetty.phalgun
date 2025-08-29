@@ -69,14 +69,14 @@ a:hover {
 
 .resume-fixed-btn {
   position: fixed;
-  top: 60px;   /* just below navbar */
-  right: 20px; /* stick to right */
+  top: 60px;        /* push down just below navbar */
+  right: 20px;      /* stick to right side */
   background: #00bfff;
   color: #121212;
   padding: 10px 18px;
   border-radius: 8px;
   font-weight: bold;
-  z-index: 1100;  /* stay above content */
+  z-index: 1100;    /* make sure it's above all other content */
   transition: background 0.3s;
 }
 
@@ -84,7 +84,6 @@ a:hover {
   background: #009acd;
   color: #fff;
 }
-
 
 
 /* Home Layout */
