@@ -39,11 +39,20 @@ a:hover {
   display: flex;
   justify-content: center;
   list-style: none;
+  overflow-x: auto;       /* ✅ enable horizontal scroll */
+  white-space: nowrap;    /* ✅ keep items in one line */
+  scrollbar-width: none;  /* hide scrollbar in Firefox */
+}
+
+.navbar ul::-webkit-scrollbar {
+  display: none;          /* hide scrollbar in Chrome/Safari */
 }
 
 .navbar li {
   margin: 0 15px;
+  flex: 0 0 auto;         /* ✅ prevent shrinking */
 }
+
 
 .navbar a {
   color: #fff;
